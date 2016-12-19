@@ -1,0 +1,268 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+
+    <!-- CSS Style sheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/formValidation.min.css" rel="stylesheet">
+    <link href="css/morris.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Navbar Starts-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" href="#">Sports!</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav right">
+              <li><a href="index.php#sectionOne">Game Summary</a></li>
+              <li><a href="index.php#sectionTwo">Highlights</a></li>
+              <li><a href="index.php#sectionThree">Replays</a></li>
+              <li><a href="index.php#sectionFour">Rankings</a></li>
+              <li><a href="graph.php">Graphs</a></li>
+              <li><a href="#">Form</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar ends-->
+
+    <div class="container">
+      <h1>Form</h1>
+      <div class="form">
+      <!--Form Starts-->
+        <form action="saveForm.php" method="post" id= "infoForm" class="form-horizontal">
+          <div class="form-group">
+            <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputFirstName" name="FirstName" placeholder="First Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputLastName" name="LastName" placeholder="Last Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="inputEmail" name ="email" placeholder="Email" >
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-4">
+              <input type="password" class="form-control" id="inputPassword" name ="password" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputConfPassword" class="col-sm-2 control-label">Confirm Password</label>
+            <div class="col-sm-4">
+              <input type="password" class="form-control" id="inputConfPassword" name ="inputConfPassword" placeholder="Confirm Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-control" class="col-sm-2 control-label">Favourite Team</label>
+              <div class="col-sm-4">
+                <select class="form-control" name="option">
+                  <option selected="selected" disabled="disabled">Select One:</option>
+                  <option>Chicago Cubs</option>
+                  <option>Toronto Blue Jays</option>
+                  <option>Boston Red Sox</option>
+                  <option>New York Yankees</option>
+                  <option>Other</option>
+                </select>
+             </div>
+          </div>
+          <div class="form-group">
+            <label for="radio-inline" class="col-sm-2 control-label">Gender</label>
+            <div class="col-sm-10">
+              <label>
+                  <input type="radio" name="gender" id="inlineRadio1" value="Male"> Male
+              </label>
+              <label>
+                  <input type="radio" name="gender" id="inlineRadio2" value="Female"> Female
+              </label>
+              <label>
+                  <input type="radio" name="gender" id="inlineRadio3" value="Prefer not to dislose"> Prefer not to dislose
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="checkbox-inline" class="col-sm-2 control-label">Preferences</label>
+            <div class="col-sm-10">
+              <label>
+                    <input type="checkbox" id="inlineCheckbox1" name="folTeam"> Follow Team
+              </label>
+              <label>
+                    <input type="checkbox" id="inlineCheckbox2" name ="folPlayer"> Follow Player
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="form-control" class="col-sm-2 control-label">Comments</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" rows="4"  name ="text" placeholder="Text Area"></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name ="termsCondition">I agree with the Terms and Conditions of this website
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <input type="submit" class="btn btn-default" name="signup" value="Submit">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--Form Ends-->
+
+    <!--Footer Starts-->
+    <footer class="footer footer-inverse navbar-fixed-bottom">
+      <div class="container">
+        <p class="text-muted">Copyright &copy; 2016. All Rights Reserved. Sports!</p>
+      </div>
+    </footer>
+      <!--Footer Ends-->
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/formValidation.min.js"></script>
+
+    <script src="js/framework/bootstrap.min.js"></script>
+
+    <script src="js/raphael-min.js"></script>
+
+    <script src="js/morris.min.js"></script>
+
+    <!--Form Verification Starts-->
+    <script>
+    $(document).ready(function() {
+        $('#infoForm').formValidation({
+            framework: 'bootstrap',
+            icon: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                FirstName: {
+                    validators: {
+                        notEmpty: {
+                            message: 'First name is required'
+                        }
+                    }
+                },
+                LastName: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Last name is required'
+                        }
+                    }
+
+                  },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Email is required'                 
+                },
+                 regexp: {
+                     regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
+                          message: 'This is not a valid email address'
+                            }
+                          }
+                        },
+                password: {
+                    validators: {
+                              notEmpty: {
+                            message: 'Password is required'
+                    },
+                    stringLength: {
+                            min: 6,
+                            message: 'The password must be atleast 6 characters long'
+                          }
+                        }
+                    },
+                inputConfPassword: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Confirmed password is required'                 
+                },          
+                      identical: {
+                        field: 'password',
+                        message: 'Passwords do not match'
+                      
+                            
+                    }
+                  }
+                  
+                },
+
+                option: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Option must be selected'
+                        }
+                    }
+                },
+                gender: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Gender must be selected'
+                        }
+                    }
+                },
+                check: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Must select an option'
+                        }
+                    }
+                },
+                text: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Must input text'
+                        }
+                    }
+                },
+                termsCondition: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Terms and condition must be accepted'
+                        }
+                    }
+                }
+            }
+        });
+    });
+    </script>
+<!--Form Verification Ends-->
+  </body>
+</html>
