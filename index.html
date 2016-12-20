@@ -17,6 +17,8 @@
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
 
+    <link href="style.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -41,7 +43,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand" href="#page-top">Aphro Lion</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,6 +54,9 @@
                     </li>
                     <li class="page-scroll">
                         <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#portfolioModal7" data-toggle="modal">Resume</a>
                     </li>
                     <li class="page-scroll">
                         <a href="#about">About</a>
@@ -71,9 +76,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" style="border-radius: 50%; width:300px;" src="img/profile.jpg" alt="">
                     <div class="intro-text">
-                        <span class="name">Amalnnath Parameswaran</span>
+                        <span class="name" style="font-size:50px;">Amalnnath Parameswaran</span>
                         <hr class="star-light">
                         <span class="skills">Web Developer - Software Engineer - Entrepreneur</span>
                     </div>
@@ -173,8 +178,8 @@
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
+                    <a class="btn btn-lg btn-outline" href="#portfolioModal7" data-toggle="modal">
+                        <i class="fa fa-file"></i> View Resume
                     </a>
                 </div>
             </div>
@@ -514,6 +519,70 @@
             </div>
         </div>
     </div>
+<!--Resume-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Amalnnath Parameswaran</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <ul class="list-inline item-details">
+                                <li>Address:
+                                    <strong><a href="http://startbootstrap.com">23 Arctic Wolf Rd. Brampton ON. L6R 3K4</a>
+                                    </strong>
+                                </li>
+                                <li>Cell Phone:
+                                    <strong><a href="tel:+16472943148">647-294-3148</a>
+                                    </strong>
+                                </li>
+                                <li>Email:
+                                    <strong><a href="mailto:amalnnath20@gmail.com">amalnnath20@gmail.com</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <h3>Education</h3>
+                            <br>
+                            <p class="resume"><strong>University of Ontatio Institute of Technology, Oshawa, ON.</strong></p>
+                            <p style="font-size:16px;" align="left">Bachelor of Engineering, Software Engineering</p>
+                            <br>
+                            <p class="resume"><strong>North Park Secondary School, Brampton, ON.</strong></p>
+                            <p style="font-size:16px;" align="left">Ontatio Secondary School Diploma</p>
+                            <br>
+                            <h3>Professional Experience</h3>
+                            <br>
+                            <p class="resume"><strong>Busboy, Oca Nera Fine Italian Cuisine, Woodbridge, ON.</strong></p>
+                            <br>
+                            <ul class="resume">
+                              <li>Served dishes</li>
+                              <li>Made coffees and deserts</li>
+                              <li>Interacted with customers and assisted to optimize their experience</li>
+                            </ul>
+                            <br>
+                            <p class="resume"><strong>Cashier, Sunnyvale Supermarket, Brampton, ON.</strong></p>
+                            <br>
+                            <ul class="resume">
+                              <li>Operated the cash register</li>
+                              <li>Assisted in stocking inventory</li>
+                              <li>Delivered grocery items to local homes</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--End of Resume-->
+
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
