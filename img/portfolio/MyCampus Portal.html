@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0094)http://portal.mycampus.ca/cp/render.UserLayoutRootNode.uP?uP_tparam=utf&utf=/cp/school/sctmain -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>MyCampus Portal</title><script language="JavaScript">
+	
+	      selfservicen = new Image(39, 26);
+        selfservicen.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/selfservice_roll.gif";
+	      itservicedeskn = new Image(39, 26);
+        itservicedeskn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/itservicedesk_roll.gif";
+				dccaresn = new Image(39, 26);
+        dccaresn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/dccares_roll.gif";
+        gmailn = new Image(39, 26);
+        gmailn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/gmail_roll.gif";
+        blackboardn = new Image(39, 26);
+        blackboardn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/blackboard_roll.gif";
+        dcmailn = new Image(39, 26);
+        dcmailn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/dcmail_roll.gif";
+        dcconnectn = new Image(39, 26);
+        dcconnectn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/dcconnect_roll.gif";
+
+        ddn = new Image(39, 26);
+        ddn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/admin_roll.gif";
+        een = new Image(39, 26);
+        een.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/logout_roll.gif";
+        ffn = new Image(39, 26);
+        ffn.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/help_roll.gif";
+        
+				selfservicef = new Image(39, 26);
+        selfservicef.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/selfservice_dft.gif";
+				itservicedeskf = new Image(39, 26);
+        itservicedeskf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/itservicedesk_dft.gif";
+				dccaresf = new Image(39, 26);
+        dccaresf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/dccares_dft.gif";
+        gmailf = new Image(39, 26);
+        gmailf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/gmail_dft.gif";
+        blackboardf = new Image(39, 26);
+        blackboardf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/blackboard_dft.gif";
+        dcmailf = new Image(39, 26);
+        dcmailf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/dcmail_dft.gif";
+        dcconnectf = new Image(39, 26);
+        dcconnectf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/dcconnect_dft.gif";
+
+        ddf = new Image(39, 26);
+        ddf.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/admin_dft.gif";
+        eef = new Image(39, 26);
+        eef.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/logout_dft.gif";
+        fff = new Image(39, 26);
+        fff.src = "/media/org/jasig/portal/layout/dlm/skins/classic/controls/help_dft.gif";
+
+        function img_act(imgName)
+        {
+            document[imgName].src = eval(imgName + "n.src");
+        }
+        function img_inact(imgName)
+        {
+            document[imgName].src = eval(imgName + "f.src");
+        }
+        function center(width, height)
+        {
+            width = Math.min(screen.availWidth, width);
+            height = Math.min(screen.availHeight, height);
+            topMargin = parseInt((screen.availHeight - height)/2);
+            leftMargin = parseInt((screen.availWidth - width)/2);
+            return 'width='+width+',height='+height+',top='+topMargin+',left='+leftMargin;
+        }
+        var helpTag = "gen.main";
+        var isCourses = false;
+        var emailWindow;
+        if (typeof navigator.muaWindowIndex === "undefined")
+            navigator.muaWindowIndex = -1;
+        
+        var jmain;
+        if( navigator.calWin != null )
+        {
+                jmain = navigator.calWin[0];
+        }
+        
+        if (self.name == "cpLogin") { self.name = "";}
+        var mainWindow = true;  
+  function unloadPage()
+  {
+      if(navigator.cpChildWindowList != null)
+      {
+          for( var i=0;
+               i < navigator.cpChildWindowList.length;
+               i++
+              )
+          {
+              var win = navigator.cpChildWindowList[i];
+              if ( navigator.muaWindowIndex == i )
+              {
+                logoutMuaWin();
+              }
+              if(!win.closed)
+              {
+                  win.close();
+              }
+          }
+          navigator.cpChildWindowList = null;
+      }
+  }
+  function logoutMuaWin()
+  {
+    var xmlHttpRequest = getXmlHttpRequest();
+    xmlHttpRequest.open("GET", /*URL*/ "http://portal.mycampus.ca/cp/wu/mua/logout", true);
+    xmlHttpRequest.send(null);
+    navigator.muaWindowIndex = -1;
+  }
+  function OpenHelp()
+  {
+      if (self.name == "nav")
+      {
+          parent.top.OpenHelp();
+      }
+      else
+      {
+          var unDefined;
+          var prefix = /*URL*/ "http://portal.mycampus.ca/cp/contexthelp/";
+          var url = helpTag;
+          if(navigator.cpChildWindowList == null)
+          {
+              navigator.cpChildWindowList = new Array();
+          }
+          if ( isCourses && parent.top.frames[1].helpTag != null)
+          { url = prefix + parent.top.frames[1].helpTag; }
+          else
+          { url = prefix + helpTag; }
+          stats='resizable=yes,toolbar=no,location=no,directories=no,status=yes,menubar=no,';
+          stats += 'scrollbars=yes,width=650,height=475';
+          helpWindow = window.open (url,"helpWindow",stats);
+          setTimeout ("helpWindow.focus ()", 500);
+          navigator.cpChildWindowList[navigator.cpChildWindowList.length] = helpWindow;
+        }
+  }
+  function OpenWin(w, wURL, wStats)
+  {
+      if (self.name == "nav")
+      {
+          parent.top.OpenWin(w, wURL, wStats);
+      }
+      else
+      {
+          var unDefined;
+          if(navigator.cpChildWindowList == null)
+          {
+              navigator.cpChildWindowList = new Array();
+          }
+					
+ 					if (w == "itservicedesk")
+          {
+					itservicedeskWindow = window.open("https://servicedesk.dc-uoit.ca/Pages/default.aspx","itservicedeskWindow","");
+          }
+          else if (w == "dccares")
+          {
+					dccaresWindow = window.open("http://www.durhamcollege.ca/dccares","dccaresWindow", "");
+          }
+          else if (w == "gmail")
+          {
+					gmailWindow = window.open("http://mail.uoit.net/","gmailWindow", "");
+          }
+					else if (w == "blackboard")
+          {
+					blackboardWindow = window.open("https://uoit.blackboard.com/","blackboardWindow", "");
+          }
+          else if (w == "dcmail")
+          {
+					dcmailWindow = window.open("http://www.dcmail.ca","dcmailWindow", "");
+          }
+          else if (w == "dcconnect")
+          {
+					dcconnectWindow = window.open("https://durhamcollege.desire2learn.com/","dcconnectWindow", "");
+          }
+          else if (w == "admin")
+          {
+              stats='dependent=yes,resizable=yes,scrollbars=yes,toolbar=no,location=no,directories=no,status=yes,menubar=no,';
+              stats += center(790, 550);
+              adminWindow = window.open ("https://portal.mycampus.ca/jsp/admin/Admin.jsp","adminWindow",stats);
+              setTimeout ("adminWindow.focus ()", 500);
+              navigator.cpChildWindowList[navigator.cpChildWindowList.length] = adminWindow;
+          }
+
+       }
+  }
+  </script></head><frameset rows="87,100%" framespacing="0" frameborder="0" border="0"><frame src="./MyCampus Portal_files/render.html" scrolling="no" name="nav" marginwidth="0" marginheight="0" noresize="noresize"><frame src="./MyCampus Portal_files/sctmain.html" scrolling="auto" name="content" marginwidth="0" marginheight="0" noresize="noresize"></frameset><noframes>&lt;h2&gt;Frame Alert&lt;/h2&gt;&lt;p&gt;This document is designed to be viewed using the frames feature. If you see this message, you are using a non-frame-capable web client.&lt;/p&gt;</noframes></html>

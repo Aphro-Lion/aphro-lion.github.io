@@ -1,0 +1,908 @@
+<!--
+
+/* Custom css style sheet for schools to add thier own styles or override styles in default css */
+
+
+/* These styles have corresponding styles that finish out the desired look and feel in 
+   /misc/style.css but need to be in this file because of the dependency on the theme 
+   that the images reside in.
+   
+   When creating a new theme, change the path to reflect the new theme.  In most cases, only 
+   the directory immediately following the "custom" directory (classic, in the styles below) 
+   will need to be changed.
+ */
+
+input.btn {
+  background-image: url(/custom/classic/images/misc/btnbg.gif);
+}
+input.btnvert {
+  background-image: url(/custom/classic/images/misc/btnbg.gif);
+}
+input.btnsm {
+  background-image: url(/custom/classic/images/misc/btnbg.gif);
+}
+input.btndisabled {
+  background-image: url(/custom/classic/images/misc/btnbg.gif);
+}
+input.btnsmdisabled {
+  background-image: url(/custom/classic/images/misc/btnbg.gif);
+}
+
+/* Disabled the rounded corner tabs
+   Original css style being comment out as following 
+   June 11, 2014   
+*/
+
+/*
+td.tabon { 
+  background-image:url(/custom/classic/images/misc/tab_corner.gif); 
+}
+
+td.taboff { 
+  background-image:url(/custom/classic/images/misc/tab_corner.gif); 
+}
+div.tabon {
+  background-image:url(/custom/classic/images/misc/tab_corner_right.gif); 
+}
+div.taboff { 
+  background-image:url(/custom/classic/images/misc/tab_corner_right.gif); 
+}
+*/
+
+.bgmenu {
+  background-image:url(/custom/classic/images/misc/menu_bg.gif);
+}
+
+/*
+Start of Addition for MyCampus redesign
+1. Use Regular Tabs(Not using rounded corner tabs)
+2. One tab color for both DC and UOIT
+3. Other minor changes to the channel borders
+June 11, 2014
+4. Wendy Zhang - As requested by the design meeting August 15
+a.Changed the active tab color from 455560 to 404041
+b. Wendy Zhang - Changed padding-left and padding-right to 15px
+*/
+
+/*
+Addtion background table cell color for tab when tab on/off
+*/
+.bgtabon {
+background-color: #404041 !important;
+}
+
+td.tabon { 
+border-left:4px solid #fff;
+background-color:#404041 !important;
+}
+
+td.taboff { 
+border-left:4px solid #fff;
+background-color:#6A717B !important;
+color:#fff !important;
+}
+
+td.taboff a{ 
+color:#fff !important;}
+
+div.tabon {
+background-color:#404041 !important;
+padding-left:15px;
+padding-right:15px;
+}
+
+div.taboff { 
+background-color:#6A717B !important;
+color:#fff !important;
+padding-left:15px;
+padding-right:15px;
+
+}
+
+/* Addition */
+#channel .bg1 {
+display:none;
+}
+
+/* Addition background color for whole portal */
+.uportal-background-content {
+background: #f2f2f2;
+padding:20px;
+}
+
+/* Addtion Channel borders */
+.border {
+background:#fff;
+width: auto;
+margin: 0px 0px 0px 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+padding-right: 0px;
+padding-left: 0px;
+border: solid;
+border-top-width: 0px;
+border-bottom-width: 1px;
+border-right-width: 1px;
+border-left-width: 1px;
+border-color: #fff;
+}
+
+/* Addition Channel top border */
+#channel{
+border-top:5px solid #404041;}
+
+/* End of Addition for MyCampus redesign */
+/* End theme dependent styles */
+
+
+/* Addition DC RO's Title */
+.dcrotitle1 {
+color:#0b8261;
+font-weight:bold;
+}
+
+/* Addition DC Content Title */
+.dctitle1{
+color:#000;
+font-size:24px;
+font-weight:bold;
+}
+ 
+.dctitle2{
+color:#522c1b;
+font-size:18px;
+line-height: 250%;
+}
+
+.dctitle2deeplink{
+color:#0b8261;
+font-size:18px;
+line-height: 250%;
+}
+ 
+.dctitle3{
+color:#000;
+font-size:15px;
+}
+ 
+.dctitle4{
+color:#000;
+font-size:13px;
+}
+
+.dctitle5{
+color:#000;
+font-size:13px;
+}
+
+
+/* Addition DC RO's priority icon in the list */
+.iconlist {
+list-style-type:none;
+padding:0;
+margin:0;
+line-height:150%; 
+}
+
+li.highpriority {
+background-image:url('/mycampusfiles/images/redflag12x12.png'); 
+background-repeat:no-repeat; 
+background-position:0 .4em; 
+margin-left:25px;
+padding-left:20px;
+padding-top:0;
+width:
+}
+
+li.normal {
+background-image:url('/mycampusfiles/images/normal.jpg'); 
+background-repeat:no-repeat; 
+background-position:0 .4em; 
+margin-left:25px;
+padding-left:20px;
+padding-top:0;
+}
+
+/* Addition for DC Social Media Links */
+.socialmediatitle{
+font-weight:bold;
+margin-top:30px;
+margin-left:10px;
+padding-left:10px;
+width:300px;
+border:none;
+display:block;
+}
+
+.socialmediacontainer {
+margin-top:0px;
+margin-left:10px;
+padding-left:10px;
+width:300px;
+height:60px;
+border:none;
+display:block;
+}
+
+.socialmediacontainer .socialmediaicon{
+float:left;
+margin-top:10px;
+margin-left:3px;
+margin-right:3px;
+margin-bottom:10px;
+height:34px;
+width:34px;
+border:none;
+}
+
+img.socialmedia {
+border:none; 
+margin:0px 0px 0px 0px;
+}
+
+/* Addition for Learn More image position */
+.learnmorecontainer {
+margin-top:20px;
+margin-left:20px;
+width:95px;
+height:35px;
+border:none;
+display:block;
+}
+
+
+/* Addition for Hired channel image position */
+.hiredportalcontainer {
+margin-top:20px;
+margin-left:20px;
+padding-left:10px;
+width:400px;
+height:180px;
+border:none;
+display:block;
+}
+
+img.hiredportal {
+border-color: #000000; 
+border-style: solid;
+border-width: 1px;
+margin:0px 0px 0px 0px;
+}
+
+/* Addition for ICE Image position */
+.icecontainer {
+margin-top:20px;
+margin-left:20px;
+padding-left:10px;
+width:600px;
+height:400px;
+border:none;
+display:block;
+}
+
+img.ice {
+border-color: #000000; 
+border-style: solid;
+border-width: 0px;
+margin:0px 0px 0px 0px;
+}
+
+/* Addition for DC Services Image position */
+.dcservicescontainer {
+margin-top:20px;
+margin-left:20px;
+padding-left:20px;
+width:300px;
+height:200px;
+border:none;
+display:block;
+}
+
+img.dcservices {
+border-color: #000000; 
+border-style: solid;
+border-width: 0px;
+margin:0px 0px 0px 0px;
+}
+
+
+/* Addition for DC Schools Image position */
+.dcschoolscontainer {
+
+padding-left:20px;
+padding-bottom: 20px;
+width:300px;
+height:244px;
+border:none;
+display:block;
+}
+
+img.dcschools {
+border-color: #000000; 
+border-style: solid;
+border-width: 0px;
+margin:0px 0px 0px 0px;
+}
+
+
+/* Addition for DC Channel Links in the list*/
+.dcnavlist {
+padding:0px;
+margin:0px;
+line-height:150%; 
+margin-left:5px;
+padding-left:0px;
+}
+
+.dcnavlist a:link,.dcnavlist a:visited {
+color:#0b8261;
+text-decoration:underline;
+}
+
+.dcnavlist a:active,.dcnavlist a:hover {
+background-color:#eeeeee;
+color:#f37321;
+}
+
+/* Addtion for Need to know and announcements list */
+.dcpostlist {
+padding:0px;
+margin:0px;
+line-height:150%; 
+margin-left:5px;
+padding-left:0px;
+}
+
+.dcpostlist a:link,.dcpostlist a:visited {
+color:#0b8261;
+text-decoration:underline;
+}
+
+.dcpostlist a:active,.dcpostlist a:hover {
+background-color:#eeeeee;
+color:#f37321;
+}
+
+
+/* Addtion for Need to know and text */
+.dcposttext {
+padding:0px;
+margin:0px;
+line-height:150%; 
+margin-left:30px;
+padding-left:0px;
+}
+
+/* Addition for DC General URL */
+
+a.dctext:link {
+color:#0b8261;
+text-decoration:underline;
+}
+
+a.dctext:visited {
+color:#0b8261;
+text-decoration:underline;
+}
+
+a.dctext:active {
+background-color:#eeeeee;
+color:#f37321;
+}
+
+a.dctext:hover {
+background-color:#eeeeee;
+color:#f37321;
+}
+ 
+/* Addition for DC Schools tab layout */
+.dcschoolswrap {
+width:1000px;
+margin:0 auto;
+float:left;
+background:#FFFFFF;
+}
+
+.dcschoolsleft {
+float:left;
+width:620px;
+padding-left:5px;
+background:#FFFFFF;
+min-height: 600px;
+border-width:0px;
+}
+
+.dcschoolsright {
+float:right;
+width:360px;
+padding-top: 0px; 
+padding-right: 0px;
+padding-left: 15px;
+padding-bottom: 0px;
+background:#FFFFFF;
+min-height: 600px;
+}
+
+.dcschoolscontentleft {
+float:left;
+min-height: 280px;
+min-width: 550px;
+max-width: 550px;
+border:dashed;
+border-width:1px;
+border-color:#FFFFFF;
+margin-top: 5px; 
+margin-right: 0px;
+margin-left: 15px;
+margin-bottom: 20px;
+padding-top: 5px; 
+padding-right: 10px;
+padding-left: 5px;
+padding-bottom: 5px;
+}
+
+.dcschoolscontentright {
+float:left;
+min-height: 200px;
+min-width: 300px;
+max-width: 300px;
+border:dashed;
+border-width:1px;
+color: #FFFFFF;
+margin-top: 5px; 
+margin-right: 0px;
+margin-left: 15px;
+margin-bottom: 20px;
+padding-top: 5px; 
+padding-right: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+}
+
+/* Event Container for the event section on the DC Schools tab*/
+.event_container {
+width:360px;
+float: left;
+margin-bottom: 5px;
+margin-left: 25px;
+}
+
+/* Event Date Container */
+.event_date {
+width:65px;
+float:left;
+}
+
+/*Event Month Brown*/
+.event_month {
+font-size: 18px;
+text-transform: uppercase;
+color: #522c1b;
+}
+
+/*Event Day Green */
+.event_day {
+color: #0b8261;
+font-size: 34px;
+font-weight: bold;
+margin-top: -11px;
+}
+
+/*Event Content */
+.event_content {
+float: right;
+width: 290px;
+padding-top: 5px;
+}
+
+
+/* Detailed Event Container for the Event Details Page*/
+.event_detail_container {
+width:510px;
+float: left;
+margin-bottom: 5px;
+margin-left: 25px;
+}
+
+/*Event Content */
+.event_detail_content {
+float: right;
+width: 440px;
+padding-top: 5px;
+}
+
+
+
+/* Addition for DC Schools News Details Page */
+.newsdetailcontainer {
+margin-top:20px;
+margin-left:20px;
+padding-left:10px;
+width:600px;
+border:none;
+display:block;
+}
+
+
+/* Addition UOIT Financial Aid Dashed hr element */
+hr.dashed
+{
+width: 80%;
+color: #6699cc;
+border:dashed;
+border-width:1px 0 0 0;
+height:0;
+line-height:0px;
+font-size:0;
+margin-top:20px;
+margin-bottom:20px;
+padding:0;
+float: center;
+}
+
+/* Addition Text Block's Max Width 450px */
+.uoitfacontent {
+text-align : left; 
+max-width: 450px;
+}
+
+/* Addition Text Block's Max Width 550px */
+.maxcontent1 {
+text-align : left; 
+max-width: 550px;
+}
+
+/* Addition for Important Date */
+.important_dates_container {
+  float: left;
+  max-width: 550px;
+  margin-right: 0px;
+  margin-left: 15px;
+
+}
+
+/* Event Container for Important Dates for DC Home tab*/
+.event_container {
+width:360px;
+float: left;
+margin-bottom: 5px;
+margin-left: 25px;
+}
+
+/* Event Date Container */
+.event_date {
+width:65px;
+float:left;
+}
+
+/*Event Month Brown*/
+.event_month {
+font-size: 18px;
+text-transform: uppercase;
+color: #522c1b;
+}
+
+/*Event Day Green */
+.event_day {
+color: #0b8261;
+font-size: 34px;
+font-weight: bold;
+margin-top: -11px;
+}
+
+/*Event Content */
+.event_content {
+float: right;
+width: 290px;
+padding-top: 5px;
+}
+
+
+/* Needtoknow Container for the Need to Know section on DC Home tab*/
+.needtoknow_container {
+width:700px;
+max-width:700px;
+float: left;
+margin-bottom: 5px;
+margin-left: 25px;
+
+}
+
+/* Needtoknow Left image */
+.left_image {
+float:left;
+width:220px;
+}
+
+
+/* Needtoknow right image */
+.right_text {
+float: right;
+width: 470px;
+}
+
+
+
+
+
+/* UOIT Header Size */
+/* Dark blue: #003c71 */
+/* Light blue: #0077CA */
+/* Grey: #53565A */
+
+
+/* Addition for UOIT General URL */
+
+a.uoittext:link {
+color:#0077CA;
+text-decoration:none;
+}
+
+a.uoittext:active {
+color:#0077CA;
+text-decoration:none;
+}
+
+a.uoittext:hover {
+color:#003c71;
+text-decoration:none;
+}
+
+a.uoittext:visited {
+color:#003c71;
+text-decoration:none;
+}
+
+/* Addition All Portal General URL */
+a:link {
+color:#000000;
+}
+
+a:visited {
+color:#000000;
+}
+
+a:active {
+color:#999999;
+}
+
+a:hover {
+color:#999999;
+text-decoration:underline;
+}
+ 
+ 
+.uoittitle2deeplink{
+color:#003c71;
+font-size:18px;
+line-height: 250%;
+text-transform: uppercase;
+}
+
+.uoittitle2{
+color:#003c71;
+font-size:18px;
+line-height:120%;
+padding-top:15px;
+padding-bottom:10px;
+text-transform:uppercase;
+}
+ 
+.uoittitle3{
+color:#003c71;
+font-size:15px;
+line-height: 250%;
+text-transform: uppercase;
+}
+ 
+.uoittitle4{
+color:#003c71;
+font-size:15px;
+}
+
+.uoittitle5{
+color:#003c71;
+font-size:13px;
+}
+
+/* Addition for UOIT Student Life Service Individual Image position */
+.uoitstudentlifecontainer {
+
+padding-left:20px;
+padding-bottom: 20px;
+width:210px;
+height:238px;
+border:none;
+display:block;
+}
+
+img.dcschools {
+border-color: #000000; 
+border-style: solid;
+border-width: 0px;
+margin:0px 0px 0px 0px;
+}
+
+
+/* Addtion for UOIT Important Info and Announcement list */
+.uoitpostlist {
+padding:0px;
+margin:0px;
+line-height:150%; 
+margin-left:5px;
+padding-left:0px;
+}
+
+.uoitpostlist a:link {
+color:#0077CA;
+text-decoration:none;
+}
+
+.uoitpostlist a:active {
+color:#0077CA;
+text-decoration:none;
+}
+
+.uoitpostlist a:hover {
+color:#003c71;
+text-decoration:none;
+}
+
+.uoitpostlist a:visited {
+color:#003c71;
+text-decoration:none;
+}
+
+/* Addition for UOIT Channel Links in the list*/
+.uoitnavlist {
+padding:0px;
+margin:0px;
+line-height:150%; 
+margin-left:5px;
+padding-left:0px;
+}
+
+.uoitnavlist a:link {
+color:#0077CA;
+text-decoration:none;
+}
+
+.uoitnavlist a:active {
+color:#0077CA;
+text-decoration:none;
+}
+
+.uoitnavlist a:hover {
+color:#003c71;
+text-decoration:none;
+}
+
+.uoitnavlist a:visited {
+color:#003c71;
+text-decoration:none;
+}
+
+.uoitservices_container {
+width:280px;
+max-width:350px;
+float: left;
+}
+
+/* Header for MyCampus header */
+.header-dc {
+background-color:#455560;
+}
+
+.top-hr-dc {
+margin-top:0; 
+padding-top:0; 
+color:#6A717B;
+border-top:solid; 
+}
+
+.header-uoit {
+background-color:#455560;
+}
+
+
+.hr-uoit{
+margin-top:0;
+padding-top:0; 
+color:#6A717B;
+border-top:solid;
+}
+
+
+
+/* Two Column Container to host UOIT Icons Left Side*/
+.iconcontent_container {
+width:700px;
+max-width:700px;
+float: left;
+margin-bottom: 5px;
+margin-left: 25px;
+}
+
+.icon_left_image {
+float:left;
+width:65px;
+}
+
+.icon_right_text {
+float: left;
+width: 600px;
+}
+
+.noicon_right_text {
+margin-left:65px;
+float: left;
+width: 535px;
+}
+
+/* Two Column Container to host UOIT Icons Right Side*/
+.iconcontent_container2 {
+width:320px;
+max-width:500px;
+float: left;
+margin-bottom: 5px;
+margin-left: 25px;
+}
+
+.icon_left_image2 {
+float:left;
+width:65px;
+}
+
+.icon_right_text2 {
+float: left;
+width: 250px;
+margin-top: 15px;
+}
+
+.noicon_right_text2 {
+margin-left:65px;
+float: left;
+width: 255px;
+}
+
+
+
+/* Addition for UOIT Documents in the list*/
+.uoitdoclist{
+padding:0px;
+margin:0px;
+line-height:120%; 
+margin-left:5px;
+padding-left:0px;
+}
+
+.uoitdoclist ul{
+padding-left:25px;
+}
+
+.uoitdoclist ul li {
+padding-top: 4px;
+padding-bottom: 4px;
+}
+
+.uoitdoclist a:link {
+color:#0077CA;
+text-decoration:none;
+}
+
+.uoitdoclist a:active {
+color:#0077CA;
+text-decoration:none;
+}
+
+.uoitdoclist a:hover {
+color:#003c71;
+text-decoration:none;
+}
+
+.uoitdoclist a:visited {
+color:#003c71;
+text-decoration:none;
+}
+
+-->
